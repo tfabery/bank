@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Nigerian Prince Bank</h1>
+        <h3>Welcome to Nigerian Prince... where you must be a millionaire to open an account.</h3>
+        <img src="img/dollars.jpg" alt="Dollars and Nigerian money" class="img-responsive">
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="signup-form">
+            <div class="form-group">
+              <label for="#name">Enter your name:</label>
+              <input type="text" id="name">
+            </div>
+            <div class="form-group">
+              <label for="#initial">Initial Deposit:</label>
+              <input type="number" id="initial" step=0.01 value=1000000 min=1000000>
+            </div>
+            <button type="submit" name="button" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form class="withdraw-form">
+            <div class="form-group">
+              <label for="#deposit">Deposit:</label>
+              <input type="number" step=0.01 id="deposit" value=0 min=0>
+            </div>
+            <div class="form-group">
+              <label for="#withdraw">Withdraw:</label>
+              <input type="number" step=0.01 id="withdraw" value=0 min=0>
+            </div>
+            <button type="submit" name="button" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="result">
+        <h2></h2>
+        <div id="balance">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
